@@ -2,7 +2,9 @@ package algorithmTest_20240204;
 
 import java.util.LinkedList;
 import java.util.Queue;
-
+/*
+ * 프로그래머스 리코챗 로봇 (lv2)
+ */
 public class RecoChat {
     static int[] dx = new int[]{0, 1, -1, 0};
     static int[] dy = new int[]{1, 0, 0, -1};

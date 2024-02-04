@@ -1,5 +1,7 @@
 package algorithmTest_20240204;
-
+/*
+ * 프로그래머스 PCCE 기출문제 9번 (이웃한칸) lv1
+ */
 public class Main {
     public int solution(String[][] board, int h, int w) {
         int answer = 0;
