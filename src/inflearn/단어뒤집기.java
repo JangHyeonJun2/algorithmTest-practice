@@ -6,11 +6,31 @@ package inflearn;
  * 출력: N개의 단어를 입력된 순서대로 한 줄에 하나씩 뒤집어서 출력합니다.
  */
 
-public class 단어뒤집기 {
-    public void solution(int number) {
+import java.util.Scanner;
 
+public class 단어뒤집기 {
+    public static void solution(String[] strings) {
+        StringBuilder sb;
+
+        for (String s : strings) {
+            sb = new StringBuilder();
+            System.out.println(sb.append(s).reverse());
+        }
     }
     public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
 
+        if (n < 3 || 20 < n) {
+            return;
+        }
+
+        String[] strings = new String[n];
+
+        for (int i=0; i<n; i++) {
+            strings[i] = sc.next();
+        }
+
+        solution(strings);
     }
 }
