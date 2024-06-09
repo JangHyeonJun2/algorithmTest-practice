@@ -11,9 +11,24 @@ import java.util.Scanner;
  */
 public class 회전문자열 {
     public static void solution(String str) {
-
+        String answer = "";
+        int lt = 0;
+        int rt = str.length() - 1;
+        String[] strings = str.split("");
+        while (lt < rt) {
+            if ( strings[lt].equalsIgnoreCase(strings[rt]) ) {
+                lt++;
+                rt--;
+            } else if (!strings[lt].equalsIgnoreCase(strings[rt])) {
+                answer = "NO";
+                break;
+            }
+            answer = "YES";
+        }
+        System.out.println(answer);
     }
     public static void main(String[] args) {
-
+        Scanner sc = new Scanner(System.in);
+        solution(sc.next());
     }
 }
