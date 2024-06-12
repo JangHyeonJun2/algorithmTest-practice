@@ -11,14 +11,14 @@ import java.util.Scanner;
  */
 public class 숫자만추출 {
     public static void solution(String str) {
-        String answer = "";
+        StringBuilder answer = new StringBuilder();
         for (char ch : str.toCharArray()) {
             if ( !Character.isAlphabetic(ch) ) {
-                answer += ch;
+                answer.append(ch);
             }
         }
 
-        System.out.println(Integer.parseInt(answer));
+        System.out.println(Integer.parseInt(answer.toString()));
     }
 
     public static void main(String[] args) {
