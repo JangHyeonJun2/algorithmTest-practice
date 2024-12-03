@@ -1,5 +1,7 @@
 package bornroast;
-
+/*
+ * 문제 URL: https://school.programmers.co.kr/learn/courses/30/lessons/12952?language=java
+ */
 public class Nqueen {
     public int solution(int n) {
         return countNQueens(new int[n], 0);
