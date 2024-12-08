@@ -1,5 +1,7 @@
 package main.java.bornroast;
-
+/*
+ * 문제 URL: https://school.programmers.co.kr/learn/courses/30/lessons/12905
+ */
 public class FindMostBigSquare {
     public int solution(int[][] board) {
         int boardLength = board[0].length;
