@@ -1,9 +1,6 @@
 package test.java;
 
-import main.java.bornroast.Change;
-import main.java.bornroast.FindMostBigSquare;
-import main.java.bornroast.FindMostLongFalindRoom;
-import main.java.bornroast.Nqueen;
+import main.java.bornroast.*;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
@@ -42,5 +39,12 @@ public class CodingTest {
 
         int answer2 = findMostLongFalindRoom.solution("abacde");
         Assertions.assertEquals(3, answer2);
+    }
+
+    @Test
+    void tileTest() {
+        Tile tile = new Tile();
+        int answer = tile.solution(4);
+        Assertions.assertEquals(5, answer);
     }
 }
