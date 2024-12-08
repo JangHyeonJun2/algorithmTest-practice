@@ -2,6 +2,7 @@ package test.java;
 
 import main.java.bornroast.Change;
 import main.java.bornroast.FindMostBigSquare;
+import main.java.bornroast.FindMostLongFalindRoom;
 import main.java.bornroast.Nqueen;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
@@ -30,5 +31,16 @@ public class CodingTest {
 
         int answer2 = fmbs.solution(new int[][]{{0, 0, 1, 1}, {1, 1, 1, 1}});
         Assertions.assertEquals(4, answer2);
+    }
+
+    @Test
+    void findMostLongFalindRoomTest() {
+        FindMostLongFalindRoom findMostLongFalindRoom = new FindMostLongFalindRoom();
+        int answer = findMostLongFalindRoom.solution("abcdcba");
+        Assertions.assertEquals(7, answer);
+
+
+        int answer2 = findMostLongFalindRoom.solution("abacde");
+        Assertions.assertEquals(3, answer2);
     }
 }
