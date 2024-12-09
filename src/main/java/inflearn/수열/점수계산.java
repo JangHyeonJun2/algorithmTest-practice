@@ -12,7 +12,7 @@ import java.util.Scanner;
  * 출력: 첫째 줄에 입력에서 주어진 채점 결과에 대하여 가산점을 고려한 총 점수를 출력한다.
  */
 public class 점수계산 {
-    public int solution(int n, int[] arr) {
+    public int solution(int[] arr) {
         int cumulativeScore = 0;
         int score = 0;
 
@@ -34,6 +34,6 @@ public class 점수계산 {
         for (int i=0; i<n; i++) {
             arr[i] = sc.nextInt();
         }
-        System.out.println(test.solution(n, arr));
+        System.out.println(test.solution(arr));
     }
 }
