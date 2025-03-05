@@ -38,6 +38,6 @@ public class 등수구하기 {
             koreaScores[i] = sc.nextInt();
         }
         등수구하기 answer = new 등수구하기();
-        answer.solution(students, koreaScores);
+        answer.solution(koreaScores);
     }
 }
